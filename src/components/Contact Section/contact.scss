@@ -1,0 +1,114 @@
+:root{
+    --primaryColor:#00eaff;
+    --primaryHover: hsl(185, 92%, 41%);
+    --secondaryColor: rgb(150, 162, 188);
+    --paragraphColor:rgb(127, 127, 175);
+    --BgColor:#031a30;
+    --formColor: rgb(2, 15, 29);
+   --projectCardColor:#072340;
+    --textColor:#dae4fb;
+    --headerHeight: 3rem;
+}
+
+.contact{
+    .contactContainer{
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.4rem;
+
+
+        .socialContacts{
+            justify-content: center;
+            h3{
+                color: var(--secondaryColor);
+                padding: .7rem 0;
+                text-align: center;
+            }
+
+            .card{
+                display: grid;
+                align-items: center;
+                row-gap: 10px;
+                padding: 1.5rem;
+                width: 240px;
+                background: var(--projectCardColor);
+                border-radius: 10px;
+                text-align: center;
+
+                &:hover{
+                    border-bottom: 2px solid var(--primaryHover);
+                    transform: translateY(-10px);
+                }
+
+                .icon{
+                    color: var(--primaryColor);
+                    &:hover{
+                        color: var(--primaryHover);
+                    }
+                }
+
+                h4{
+                    color: var(--textColor);
+                    letter-spacing: 1px;
+                    font-size: 18px;
+
+                }
+
+                .userName{
+                    color: var(--secondaryColor);
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+
+                a{
+                    justify-content: center;
+                    gap:5px;
+                    color: var(--primaryColor);
+                    font-weight: 600;
+                    cursor: pointer;
+                    align-items: center;
+
+                    .icon{
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+
+                    &:hover{
+                        color: var(--primaryColor);
+                        transform: translateY(10px);
+                    }
+                }
+            }
+
+            .cards{
+                gap: 1.3rem;
+                justify-content: center;
+
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (min-width:640px) {
+    .contact{
+        height: 80vh;
+        zoom: 1.1;
+        .socialContacts{
+            h3{
+                font-size: 2rem;
+                letter-spacing: 1.5px;
+            }
+            .cards{
+                padding: 2rem ;
+                justify-content: center;
+                grid-template-columns: repeat(2 , 1fr);
+            }
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,260 @@
+:root{
+    --primaryColor:#00eaff;
+    --primaryHover: hsl(185, 92%, 41%);
+    --secondaryColor: rgb(150, 162, 188);
+    --paragraphColor:rgb(127, 127, 175);
+    --BgColor:#031a30;
+    --formColor: rgb(2, 15, 29);
+   --projectCardColor:#072340;
+    --textColor:#dae4fb;
+    --headerHeight: 3rem;
+}
+
+
+.homeContainer{
+    padding: 6rem 1.5rem;
+}
+
+.home{
+    .leftIcons, .rightEmail{
+        display: none;
+    }
+}
+
+.introText{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.homeContainer .title{
+    font-size: 3.3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.subTitle{
+    display: block;
+    font-size: 1.8rem;
+    color: var(--secondaryColor);
+    font-weight: 600;
+    line-height: 2rem;
+    padding: .7rem 0;
+}
+
+.homeParagraph{
+    color: var(--primaryColor);
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    max-width: 600px;
+}
+
+.lowerHomeSection{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.contactBtn{
+    padding: .6rem 1rem;
+    background: transparent;
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    outline: none;
+    margin-top: 10px;
+    // border-radius: 10px;
+    box-shadow: #0b365f 0px 10px 20px, #a3cef6 0px 6px 6px;
+
+    &:hover{
+        box-shadow: rgba(233, 240, 46, 0.4) 5px 5px, rgba(240, 240, 46, 0.3) 10px 10px, rgba(240, 179, 46, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+}
+
+.contactBtn a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    gap: .5rem;
+    align-items: center;
+    color: var(--primaryColor);
+
+    &:hover{
+        font-size: 20px;
+    }
+}
+
+.scrollDiv{
+    display: flex;
+    justify-content: center;
+    padding-top: 12rem;
+
+    .icon{
+        font-size: 1.8rem;
+        margin-top: 5rem;
+        color: var(--primaryColor);
+        animation: move 2s infinite;
+    }
+
+    @keyframes move {
+        0%{
+            transform: translateY(25px);
+        }
+        25%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(25px);
+        }
+        75%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(25px);
+        }
+    }
+}
+
+
+@media screen and (min-width:480px) {
+    .home{
+        .homeContainer{
+            padding: 5rem 1.5rem;
+            // border: 2px solid red;
+            // border-top: 2px solid var(--primaryColor);
+            // border-left: 2px solid var(--primaryColor);
+            // &:hover{
+            //     transform: translateY(-10px);
+            // }
+            
+            .introText{
+               
+                font-size: 1.7rem;
+            }
+            .title{
+                font-size: 4rem;
+            }
+            .subTitle{
+                font-size: 2.3rem;
+            }
+            .homeParagraph{
+                font-size: 1.5rem;
+            }
+
+            .lowerHomeSection{
+                .contactBtn{
+                    padding: .8rem 1.5rem;
+                    a{
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .scrollDiv{
+                padding-top: 1.5rem;
+                .icon{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:770px) {
+    .home{
+        .homeContainer{
+            padding: 5rem 1.5rem;
+            width: 70%;
+            margin: auto;
+        }
+
+        .leftIcons, .rightEmail{
+            display: block;
+            position: fixed;
+            .icon{
+                color: var(--secondaryColor);
+            }
+            a{
+                font-weight: 600;
+                color: var(--secondaryColor);
+                letter-spacing: 1.5px;
+            }
+
+            .line{
+                margin: auto;
+                content: '';
+                background: var(--secondaryColor);
+                height: 100px;
+                width: 1px;
+            }
+        }
+
+        .leftIcons{
+            left: 5%;
+            bottom: 0;
+
+            .socials{
+                transform: translateY(-10px);
+                gap: 1.2rem;
+                .icon{
+                    color: var(--textColor);
+                    
+                    &:hover{
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+
+        .rightEmail{
+            right: 0;
+            bottom: 0px;
+            .emailAddress{
+                transform: rotate(90deg) translate(-150px, 0px);
+                a{
+                    color: var(--textColor);
+                    font-size: 1.2rem;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    &:hover{
+                        color: var(--primaryColor);
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (min-width:1240px) {
+    .home{
+        .homeContainer{
+            padding: 6rem;
+            .introText{
+                font-size: 1.5rem;
+            }
+
+            .title{
+                font-size: 5rem;
+
+            }
+
+            .subTitle{
+                font-size: 2.3rem;
+                line-height: 2.5rem;
+            }
+
+            .homeParagraph{
+                font-size: 1.8rem;
+            }
+        }
+
+
+    }
+}

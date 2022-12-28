@@ -1,0 +1,144 @@
+:root{
+    --primaryColor:#00eaff;
+    --primaryHover: hsl(185, 92%, 41%);
+    --secondaryColor: rgb(150, 162, 188);
+    --paragraphColor:rgb(127, 127, 175);
+    --BgColor:#031a30;
+    --formColor: rgb(2, 15, 29);
+   --projectCardColor:#072340;
+    --textColor:#dae4fb;
+    --headerHeight: 3rem;
+}
+
+.skills{
+    .skillsContainer{
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        
+    }
+}
+
+@media screen and (max-width:768px) {
+    .skills{
+        .skillsContainer{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            padding: 1rem 0;
+            
+            .title{
+                letter-spacing: 1.5px;
+            }
+            .skillGroup{
+                padding: .5rem 0;
+
+                .skillsBtns{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    
+                    .sbtn{
+                        display: flex;
+                        padding: 0.5rem 1.5rem ;
+                        border: 2px solid var(--primaryHover);
+                        background-color: transparent;
+                        color: var(--primaryColor);
+                        position: relative;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        margin: .73rem ;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        outline: none;
+
+                        &:hover{
+                            // background-color: var(--primaryHover);
+                            // box-shadow:#0b365f 0px 10px 20px, #a3cef6 0px 6px 6px;
+                            // color: var(--BgColor);
+                            font-size: 1.2rem;
+                            box-shadow: rgb(0, 183, 255) 0px 20px 30px -10px;
+                            font-weight: 700;
+                            border: none;
+                            border-bottom: 2px solid var(--primaryColor);
+                            .icon{
+                                color: yellow;
+                            }
+                        }
+
+                        .icon{
+                            justify-content: center;
+                            margin-left: 1rem;
+                            
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:480px) {
+    .skills{
+        height: 100vh;
+        .skillsContainer{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            .skillGroup{
+                padding: 1rem 2rem;
+
+                .title{
+                    text-align: center;
+                    letter-spacing: 1.5px;
+                    padding: 1rem;
+                }
+
+                .skillsBtns{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+
+                    .sbtn{
+                        display: flex;
+                        padding: 0.5rem 1.5rem ;
+                        border: 2px solid var(--primaryHover);
+                        background-color: transparent;
+                        color: var(--primaryColor);
+                        position: relative;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        margin: 1rem ;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        outline: none;
+
+                        &:hover{
+                            // background-color: var(--primaryHover);
+                            // box-shadow:#0b365f 0px 10px 20px, #a3cef6 0px 6px 6px;
+                            // color: var(--BgColor);
+                            font-size: 1.2rem;
+                            box-shadow: rgb(0, 183, 255) 0px 20px 30px -10px;
+                            font-weight: 700;
+                            border: none;
+                            border-bottom: 2px solid var(--primaryColor);
+                            .icon{
+                                color: yellow;
+                            }
+                        }
+
+                        .icon{
+                            justify-content: center;
+                            margin-left: 1rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

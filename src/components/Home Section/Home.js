@@ -13,16 +13,16 @@ const Home = () => {
             {/* LEFT SIDE FOR WIDE SCREEN ONLY */}
             <div className="leftIcons">
                 <div className="socials grid">
-                    <a href="" target='_blank'>
+                    <a href="https://github.com/Amrut-17" target='_blank'>
                         <BsGithub className="icon"/>
                     </a>
-                    <a href="" target='_blank'>
+                    <a href="https://www.linkedin.com/in/amrut-patil12/" target='_blank'>
                         <BsLinkedin className="icon"/>
                     </a>
-                    <a href="" target='_blank'>
+                    <a href="https://twitter.com/amrutpa01261418?t=ITAFSK91AkVH8rLQws2rmw&s=08" target='_blank'>
                         <BsTwitter className="icon"/>
                     </a>
-                    <a href="" target='_blank'>
+                    <a href="https://www.instagram.com/_amrutm_/" target='_blank'>
                         <BsInstagram className="icon"/>
                     </a>
                     
@@ -38,10 +38,10 @@ const Home = () => {
                     Amrut Patil.
                 </h1>
                 <span className="subTitle">
-                    Lorem ipsum dolor sit amet consectetur .
+                    Web Developer | Programmer 
                 </span>
                 <p className="homeParagraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem quod ut?
+                Creative | Tech-savvy | Problem-solver
                 </p>
 
                 <div className="lowerHomeSection">

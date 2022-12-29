@@ -61,7 +61,7 @@ const Contact = () => {
                             </span>
 
                             <div>
-                                <a href="https://www.instagram.com/_amrutm_" className="flex">
+                                <a href="https://twitter.com/amrutpa01261418?t=ITAFSK91AkVH8rLQws2rmw&s=08" className="flex">
                                     Follow Me on Twitter <TbClick className='icon'/>
                                 </a>
                             </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                             </span>
 
                             <div>
-                                <a href="" className="flex">
+                                <a href="https://mailto:amrutpatil9977@gmail.com" target="_blank" className="flex">
                                    Click here to send me an email <TbClick className='icon'/>
                                 </a>
                             </div>
